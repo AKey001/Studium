@@ -1,0 +1,35 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="@string/settings_header_general">
+
+        <ListPreference
+            app:defaultValue="system"
+            app:entries="@array/darkmode_entries"
+            app:entryValues="@array/darkmode_values"
+            app:key="@string/key_darkmode"
+            app:title="@string/title_darkmode"
+            app:useSimpleSummaryProvider="true"
+            app:icon="@drawable/ic_color_lens"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/title_plan">
+
+        <EditTextPreference
+            app:key="@string/key_matrikel"
+            app:title="@string/title_matrikel"
+            app:defaultValue="@string/settings_matrikel_default"
+            app:useSimpleSummaryProvider="true"
+            app:icon="@drawable/ic_group"/>
+
+        <SwitchPreference
+            app:key="@string/key_list_type"
+            app:summaryOff="@string/entire_list_summary_off"
+            app:summaryOn="@string/entire_list_summary_on"
+            app:title="@string/entire_list_title"
+            app:defaultValue="false"
+            app:icon="@drawable/ic_list_bulleted"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

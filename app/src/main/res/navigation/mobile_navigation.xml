@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_plan">
+
+    <fragment
+        android:id="@+id/navigation_plan"
+        android:name="de.antonkiessling.studium.plan.fragments.PlanFragment"
+        android:label="@string/title_plan"
+        tools:layout="@layout/content_plan">
+        <action
+            android:id="@+id/action_navigation_plan_to_navigation_day"
+            app:destination="@id/navigation_day" />
+        <action
+            android:id="@+id/action_plan_to_pdf"
+            app:destination="@id/pdf" />
+        <action
+            android:id="@+id/action_plan_to_settings"
+            app:destination="@id/settings" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_day"
+        android:name="de.antonkiessling.studium.plan.fragments.DayFragment"
+        android:label="@string/title_fragment_day"
+        tools:layout="@layout/content_plan">
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="de.antonkiessling.studium.dashboard.DashboardFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/content_dashboard" >
+        <action
+            android:id="@+id/action_dashboard_to_help"
+            app:destination="@id/help" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/help"
+        android:name="de.antonkiessling.studium.dashboard.HelpFragment"
+        android:label="@string/help"
+        tools:layout="@layout/content_help">
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/modules_input"
+        android:name="de.antonkiessling.studium.modules.fragments.ModulesInputFragment"
+        android:label="@string/title_fragment_modules"
+        tools:layout="@layout/content_module_input">
+        <action
+            android:id="@+id/action_modules_input_to_pdf"
+            app:destination="@id/pdf" />
+        <action
+            android:id="@+id/action_modules_input_to_modules_list"
+            app:destination="@id/navigation_modules_list" />
+    </fragment>
+    <fragment
+        android:id="@+id/modules_edit"
+        android:name="de.antonkiessling.studium.modules.fragments.ModulesEditFragment"
+        android:label="@string/title_fragment_modules"
+        tools:layout="@layout/content_module_input">
+        <action
+            android:id="@+id/action_modules_edit_to_pdf"
+            app:destination="@id/pdf" />
+        <action
+            android:id="@+id/action_modules_edit_to_modules_list"
+            app:destination="@id/navigation_modules_list" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/pdf"
+        android:name="de.antonkiessling.studium.commons.PDFFragment"
+        android:label="@string/title_fragment_pdf"
+        tools:layout="@layout/content_pdf"/>
+
+    <fragment
+        android:id="@+id/settings"
+        android:name="de.antonkiessling.studium.commons.SettingsFragment"
+        android:label="@string/title_fragment_settings"
+        tools:layout="@layout/content_settings">
+        <action
+            android:id="@+id/action_settings_to_plan"
+            app:destination="@id/navigation_plan" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_modules_list"
+        android:name="de.antonkiessling.studium.modules.fragments.ModulesListFragment"
+        android:label="@string/title_modules"
+        tools:layout="@layout/fragment_modules_list">
+        <action
+            android:id="@+id/action_modules_list_to_pdf"
+            app:destination="@id/pdf" />
+        <action
+            android:id="@+id/action_modules_list_to_modules_input"
+            app:destination="@id/modules_input" />
+        <action
+            android:id="@+id/action_modules_list_to_modules_edit"
+            app:destination="@id/modules_edit" />
+    </fragment>
+
+</navigation>

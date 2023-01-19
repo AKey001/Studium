@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewHelp1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="Das Gesamturteil des Studiums setzt sich wie folgt zusammen:" />
+
+            <ru.noties.jlatexmath.JLatexMathView
+                android:id="@+id/latex_math_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dip"
+                app:jlmv_alignHorizontal="start"
+                app:jlmv_alignVertical="start"
+                app:jlmv_textSize="16sp"
+                app:jlmv_background="?attr/backgroundColor"
+                app:jlmv_textColor="?attr/colorOnSurface" />
+
+
+            <TextView
+                android:id="@+id/textViewHelp2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="@string/explanation_calculation_formula" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

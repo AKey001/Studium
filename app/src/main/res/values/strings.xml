@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">Studium</string>
+    <string name="title_plan">Stundenplan</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="list_item_header_time">Zeit</string>
+    <string name="list_item_module">Modul</string>
+    <string name="list_item_room">Raum</string>
+    <string name="list_item_lecturer">Dozent</string>
+    <string name="list_item_no_data">Heute ist ein freier Tag</string>
+    <string name="menu_item_day">Refresh</string>
+    <string name="title_fragment_day">Auswahl</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="list_entry_no_data">Freier Tag</string>
+    <string name="title_fragment_modules">Modul</string>
+    <string name="title_fragment_pdf">Dokument</string>
+    <string name="form_info_fill_out">Bitte ausfüllen</string>
+    <string name="loading_error">Fehler beim Laden</string>
+    <string name="pdf_modules">modules.pdf</string>
+    <string name="pdf_weighting">weighting.pdf</string>
+    <string name="menu_item_buildings_plan">Lageplan</string>
+    <string name="title_fragment_settings">Einstellungen</string>
+
+    <string name="settings_header_general">Allgemein</string>
+    <string name="key_darkmode">darkmode</string>
+    <string name="title_darkmode">Darkmode</string>
+    <string name="menu_item_settings">Einstellungen</string>
+    <string name="key_list_type">list_type</string>
+    <string name="entire_list_summary_off">Es wird immer nur der heutige Tag und der nächste Werktag angezeigt.</string>
+    <string name="entire_list_summary_on">Im Stundenplan werden alle Tage einer Woche angezeigt.</string>
+    <string name="entire_list_title">Gesamte Woche anzeigen</string>
+    <string name="settings_matrikel_default">IIb20</string>
+    <string name="key_matrikel">matrikel</string>
+    <string name="title_matrikel">Matrikel</string>
+    <string name="title_modules">Module</string>
+    <string name="fab_label_new_module">Neues Modul</string>
+    <string name="help">Hilfe</string>
+    <string name="explanation_calculation_formula">Die Note eines Moduls wird also mit dessen Wichtungsfaktor
+        multipliziert und die Ergebnisse werden für alle Module addiert.\nDas
+        wird durch die Summe aller Wichtungsfaktoren geteilt.\nDas
+        Ergebnis ist das Gesamturteil, also die Abschlussnote, des Studiums. Es ist nicht die Durchschnittsnote.\nDie
+        Abschlussarbeit zählt dabei als Modul und hat einen dementsprechend hohen Wichtungsfaktor.\n\nDas
+        Gesamturteil wird am Ende nicht gerundet. Alle Stellen ab der zweiten Nachkommastelle entfallen.\nDennoch
+        werden diese im Dashboard ausgegraut angezeigt, um einen besseren Eindruck seines "Zwischenurteils"
+        zu erhalten.</string>
+    <string name="out_of_this_weighted">\t\t\tDavon gewichtet:</string>
+    <string name="delete_module_title">Modul löschen</string>
+    <string name="question_delete">wirklich löschen?</string>
+    <string name="cancel">Abbrechen</string>
+    <string name="delete">Löschen</string>
+</resources>
